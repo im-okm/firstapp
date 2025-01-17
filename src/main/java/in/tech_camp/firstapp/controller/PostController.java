@@ -29,7 +29,7 @@ public class PostController {
   public String showList(Model model) {
     var postList = postRepository.findAll();
     model.addAttribute("postList",postList);
-    return "Posts/index";
+    return "/posts/index";
   }
 
    @GetMapping("/posts/new")
